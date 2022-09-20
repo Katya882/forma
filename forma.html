@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forma</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	 <link rel="stylesheet" type="text/css" href="forma.css">
+</head>
+<body>
+	<div class="container">
+		<p class="retreat">Оберіть зручний спосіб доставки:</p>
+		<div class="row forma">
+			<form>
+			<div class="col-lg-12">
+				<div class="shape">
+				   	<label><input type="radio" name="check" onclick="change(this)" id="contactChoice1" ><i></i>
+				   		<p class="courier"><b>Кур'єром в місто Харків та Київ</b></p>
+				   	</label>
+				   	  <p class="days">К-сть днів</p>
+				   	  <div class="bord"></div>
+					<div class="hover-for-text">
+					   	<div class="selectgorod group w30">
+					   	 	<label>Місто</label>
+	      				 	<select>
+		             			<option disabled>Оберіть місто</option>
+					            <option value="Київ">Київ</option>
+					            <option value="Харків">Харків</option>
+	       				 	</select>
+	       				</div>
+	       				<div class="group w40">
+	       					<label>Вулиця</label>
+	   						<input type="text" name="street" placeholder="Назва вулиці">
+	       				</div>
+	       				<div class="group w20">
+	       					<label>Дім</label>
+	   						<input type="text" name="home">
+	       				</div>
+	       				<div class="group w20">
+	       					<label>№ квартири</label>
+	   						<input type="text" name="flat">
+	       				</div>
+	       				<div class="group textarea">
+	       					<label for="">Коментар</label>
+	       					<textarea></textarea>
+	       				</div>
+	       				<div class="delivery-group">
+		       				<p class="delivery">Кур'єром в місто Харків</p> 
+		       				<div class="checkbox-group">
+		       					<input type="checkbox" class="checkbox" name="checkbox-1" id="checkbox">
+		       					<label for="checkbox" class="checkbox-label" name="checkbox-label-1"></label>
+		       				</div>
+	       				</div>
+	       				<div class="delivery-group">
+		       				<p class="delivery">Кур'єром в місто Київ</p> 
+		       				<div class="checkbox-group">
+		       					<input type="checkbox" class="checkbox" name="checkbox-2" id="checkbox1">
+		       					<label for="checkbox1" class="checkbox-label" name="checkbox-label-2"></label>
+		       				</div>
+	       				</div>
+	       			</div>
+				</div>				
+					<div class="shape">
+					   	<label><input type="radio" name="check" onclick="change(this)" id="contactChoice1"><i></i>
+					   		<p class="courier"><b>Нова пошта</b></p>
+					   	</label>
+					   	  <p class="days">К-сть днів</p>
+					   	  <div class="bord"></div>
+					<div class="hover-for-text">
+					   	<div class="selectgorod group w30">
+					   	 	<label>Місто</label>
+	      				 	<select>
+		             			<option disabled>Оберіть місто</option>
+					            <option value="Київ">Київ</option>
+					            <option value="Харків">Харків</option>
+	       				 	</select>
+	       				</div>
+	       				<div class="group w40">
+	       					<label>Вулиця</label>
+	   						<input type="text" name="street" placeholder="Назва вулиці">
+	       				</div>
+	       				<div class="group w20">
+	       					<label>Дім</label>
+	   						<input type="text" name="home">
+	       				</div>
+	       				<div class="group w20">
+	       					<label>№ квартири</label>
+	   						<input type="text" name="flat">
+	       				</div>
+	       				<div class="group textarea">
+	       					<label for="">Коментар</label>
+	       					<textarea></textarea>
+	       				</div>
+	       				<div class="delivery-group">
+		       				<p class="delivery">Кур'єр від Нової пошти</p> 
+		       				<div class="checkbox-group">
+		       					<input type="checkbox" class="checkbox" name="checkbox-1" id="checkbox3">
+		       					<label for="checkbox3" class="checkbox-label" name="checkbox-label-1"></label>
+		       				</div>
+	       				</div>
+	       				<div class="delivery-group">
+		       				<p class="delivery">Забрати з відділення Нової пошти</p> 
+		       				<div class="checkbox-group">
+		       					<input type="checkbox" class="checkbox" name="checkbox-2" id="checkbox4">
+		       					<label for="checkbox4" class="checkbox-label" name="checkbox-label-2"></label>
+		       				</div>
+	       				</div>
+	       			</div>
+				</div>
+				<div class="shape">
+					<label><input type="radio" name="check" id="contactChoice3"><i></i><p class="courier"><b>Самовивіз в місті Харків</b></p>
+					</label>
+					 <p class="days">К-сть днів</p>
+					 <div class="bord"></div>
+				</div>
+			</div>
+			</form>
+		</div>
+			<input type="button" name="button-green" class="button-green" value=" Наступний крок ">
+			<input type="button" name="button-green-2" class="button-green" value=" Назад ">
+	</div>
+	<!-- <script type="text/javascript">
+	var btns = document.getElementsByClassName('i');
+	var par = document.getElementsByClassName('shape');
+	btns[0].onclick = function() {
+	  par[0].classList.add("hover-for-text");
+	}
+	btns[1].onclick = function() {
+	  par[0].classList.remove("hover-for-text");
+	}
+	</script> -->
+</html>

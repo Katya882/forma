@@ -1,0 +1,235 @@
+body{
+	// overflow:  hidden;
+}
+.container{
+	margin-top: 30px;
+	background: #E6E6E6;
+	width: 100%;
+	font-family: 'Josefin Sans';
+	font-size: 25px;
+	padding-top: 10px;
+}
+.retreat{
+	padding-left: 30px;
+}
+.forma{
+	background: #E6E6E6;
+	margin: 20px 20px 20px 20px;
+	p{
+		padding-top: 15px;
+		display: inline-block;
+		font-family: 'Josefin Sans';
+	}
+	.courier{
+			padding-left: 20px;
+			font-size: 20px;
+	}
+	.days{
+		float: right;
+		margin-top: 15px;
+		font-size: 20px;
+	}
+}
+.bord{
+	border-bottom: 1px solid #424242;
+	margin-top: 10px;
+}
+.shape{
+	margin-bottom: 50px;
+	background: #fff;
+	padding: 50px;
+	font-size: 0;
+	&.activ{
+		.hover-for-text{
+			height: 400px;
+		}
+	}
+	.hover-for-text{
+		transition: all 1s ease-out;
+		overflow: hidden;
+		height: 0;
+	}
+}
+label{
+	display: inline-block;
+	padding: 10px;
+	input{
+	display: none;
+	outline:none;
+	}
+}
+i{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #424242;
+	position: relative;
+	background: #fff;
+}
+
+input[type="radio"]+i{
+	border-radius: 50%;
+	margin: -10px;
+}
+i:before{
+	content: "";
+	position: absolute;
+	top: 7px;
+	bottom: 7px;
+	left: 7px;
+	right: 7px;
+	background: #64FE2E;
+	transform: scale(0);
+	transition: 0.4s;
+}
+input[type="radio"]+i:before{
+	border-radius: 50%;
+}
+input:checked+i:before{
+	transform: scale(1);
+}
+.selectgorod{
+	display: inline-block;
+	select{
+		height: 40px;
+		width: 100%;
+	}
+}
+.w30{
+	width: 30%;
+}
+.w20{
+	width: 15%;
+}
+.w40{
+	width: 40%;
+}
+
+.group{
+	display:inline-block;
+	padding-right: 10px;
+	font-size: 20px; 
+	input{
+		height: 40px;
+		outline:none;
+		width: 100%;
+	}
+
+	label{
+		display: block;
+		padding: 0;
+	}
+	&.textarea{
+		width: 100%;
+	}
+	textarea{
+		width: 100%;
+	}
+} 
+form{
+	width: 100%;
+}
+.delivery-group{
+	margin-top: 15px;
+	padding-bottom: 30px;
+	display: block;
+}
+.checkbox{
+	visibility: hidden;
+}
+.checkbox-group{
+	position: relative;
+	width: 86px;
+	height: 30px;
+	background-color: #333;
+	border-radius: 50px;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	display: inline-block;
+	margin-top: 15px;
+	float: right;
+}
+p.delivery{
+		display: inline-block;
+		// float: left;
+		font-size: 20px;
+	}
+.checkbox-group:after{
+	position: absolute;
+	content: '';
+	top: 14px;
+	left: 14px;
+	height: 2px;
+	width: 56px;
+	background-color: #111;
+	border-radius: 50px;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+.checkbox-label{
+	display: block;
+	width: 27px;
+	height: 27px;
+	border-radius: 50px;
+	background-color: #00FFFF;
+	position: absolute;
+	top: 2px;
+	z-index: 1;
+	left: 4px;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: linear-gradient(to bottom, #01DFD7 0%, #58FAF4 40%, #04B4AE 100%);
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+.checkbox:checked + .checkbox-label{
+	left: 56px;
+	// background: #DF0101;
+	background: linear-gradient(to bottom, #DF0174 0%, #FE2E2E 40%, #DF0101 100%);
+}
+.button-green{
+	border: 1px solid #2EFE64;
+	border-radius: 50px;
+	border-color: #2EFE64;
+	margin-bottom: 20px;
+    margin-left: 35px;
+    outline: none;
+	&:hover{
+		background: #2EFE64;
+	}
+}
+
+
+// .switch{
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// }
+// input[type="switch-box"]{
+// 		position: relative;
+// 		width: 80px;
+// 		height: 40px;
+// 		-webkit-appearance: none;
+// 		outline: none;
+// 		background: #A4A4A4;
+// 		border-radius: 20px;
+// 		transition: .4s;
+// 		box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+// }
+// input:checked[type="switch-box"]{
+// 		background: #00FFFF;
+// }
+// input:checked[type="switch-box"]:before{
+// 		content: '';
+// 		position: absolute;
+// 		width: 40px;
+// 		height: 40px;
+// 		border-radius: 20px;
+// 		top: 0;
+// 		left: 0;
+// 		background: #fff;
+// 		transition: .4s;
+// 		transform: scale(1.1);
+// 		box-shadow: 0 2px 5px rgba(0,0,0,.2);
+// }
+// input:checked[type="switch-box"]:before{
+// 		left: 40px;
+// }
